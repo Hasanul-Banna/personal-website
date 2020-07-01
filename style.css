@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: 'ABeeZee';font-size: 22px;
+}
+.intro-container {
+    position: relative;
+    top: 0;
+	width: 100%;
+	height: 100vh;
+    background: url(images/header-bg.png);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.intro{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.intro h2 {
+    margin-left: 30%;
+    margin-top: 30%; 
+}
+.name{
+    color: #ff3082;
+    font-size: 50px;
+    margin-left: 30%;
+    font-weight: bold;
+}
+.para{
+    color: dimgray;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+.btn{
+    margin-left: 30%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color:#ff3082 ;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: 1s ease-out ;
+}
+.btn:hover {
+    transform: rotate(-10deg);
+}
+.jack-img{
+    width: 50%;
+    float: left;
+    overflow:auto;
+}
+.jack-img::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.jack-img img {
+    padding-top: 10%;
+    width: 80%;
+    animation: bob 2s 1 ease-in-out ;
+
+}
+@keyframes bob {
+    0% {
+        width: 20%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+.sec2 {
+    position: relative;
+    top: 0;
+	width: 100%;
+    height: 100vh;
+    background: url(images/biography-bg.png);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.jack-bio-img {
+    width: 50%;
+    float: left;
+    overflow:auto;
+}
+.jack-bio-img img {
+    width: 75%;
+    padding-left: 15%;
+    padding-top: 10%;
+    animation: beat 5s ease-in-out infinite;
+}
+@keyframes beat{
+    0% {
+        width:80% ;
+    }
+    25% {
+        width: 75%;
+    }
+    50% {
+        width: 80%;
+    }
+    75%{
+        width: 75%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.jack-bio-img::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.bio {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.bio h2 {
+    margin-left: 0%;
+    margin-top: 30%;
+}
+.para2 {
+    color: dimgray;
+    padding-right: 20%;
+    margin-top: 20px;
+}
+.btn2{
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color:#ff3082 ;
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 1s ease-out;
+}
+.btn2:hover {
+    transform: rotate(10deg);
+}
+.sec3 {
+    background: url(images/latest-work-bg.png);
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    margin-bottom: 0;
+}
+.sec3 h2 {
+    margin-top: 60px;
+    text-align: center;
+}
+.works-container {
+    margin: 30px 100px;
+}
+.works-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .work {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+  }
+  .sec4 {
+    background: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 400px;
+  }
+  .box {
+      float: left;
+      margin-left: 5%;
+      padding-left: 2%;
+      width: 40%;
+      height:200px;
+      box-shadow: 10px 20px 40px gray;
+      border-radius: 5px;
+      border-left: 5px solid;
+       border-image: linear-gradient( 180deg, rgb(0, 153, 255),rgb(71, 255, 209));
+       border-image-slice: 1;
+       background-color: white;
+  }
+  .client {
+      text-align: center;
+      padding-top: 5%;
+  }
+ .des {
+     text-align: center;
+
+ } 
+ .pp {
+     padding: 5px;
+     text-align: center;
+ }
+ .contact {
+     position: relative;
+     top:0;
+     width: 100%;
+     height: 100vh;
+     background: url(images/footer-bg.png);
+     background-size: cover;
+     margin-bottom: 0;
+ }
+ .form-container{
+     width: 400px;
+     height: 500px;
+     border-radius: 5px;
+     background-color:rgb(255, 5, 122);
+     margin-top:5%;
+     margin-left: 35%;
+ }
+ .input {
+     background: transparent;
+     border:none ;
+     height: 50px;
+     border-radius: 2px;
+     color: white;
+     font-size: 1.25rem;
+ }
+ input {
+     width: 80%;
+     height: 30px;
+     margin-left: 10%;
+     margin-top: 10%;
+     background: whitesmoke;
+     border: none;
+     font-size: 20px;
+     border-radius: 5px;
+     color: black;
+ }
+ textarea {
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 10%;
+    background:whitesmoke;
+    border: none;
+    min-height: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+ }
+ .btn3 {
+    border: none;
+    border-radius: 4px;
+    color:rgb(16, 255, 235);
+    position: relative;
+    background-color:black ;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 30%;
+    margin-left: 40%;
+ }
+ footer a {
+     text-decoration: none;
+ }
