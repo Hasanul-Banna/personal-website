@@ -325,7 +325,6 @@ body {
     }
     .client{
         font-size: 20px;
-
     }
     .des{
         font-size: 8px;
@@ -343,6 +342,9 @@ body {
     }
     .sec4 h2 {
         margin-top: 20px;
+    }
+    .sec3 h2 {
+        margin-top: 0;
     }
 
  }
